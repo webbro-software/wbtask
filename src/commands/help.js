@@ -1,3 +1,5 @@
+import { showVersion } from "../utils/package.js";
+
 const help = () => {
   console.log(`
 ██╗    ██╗██████╗ ████████╗███╗   ███╗
@@ -6,6 +8,8 @@ const help = () => {
 ██║███╗██║██╔══██╗   ██║   ██║╚██╔╝██║
 ╚███╔███╔╝██████╔╝   ██║   ██║ ╚═╝ ██║
  ╚══╝╚══╝ ╚═════╝    ╚═╝   ╚═╝     ╚═╝`);
+
+  showVersion();
 
   console.log();
 
