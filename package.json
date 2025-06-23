@@ -1,0 +1,21 @@
+{
+  "name": "@webbro-software/wbtask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webbro-software/wbtask.git"
+  },
+  "keywords": [],
+  "author": "Shoxruxmirzo Usmonov",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/webbro-software/wbtask/issues"
+  },
+  "homepage": "https://github.com/webbro-software/wbtask#readme"
+}
