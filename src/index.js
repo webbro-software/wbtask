@@ -1,4 +1,5 @@
 import { addTaskCommand } from "./commands/addTask.js";
+import { listTasksCommand } from "./commands/listTasks.js";
 
 const handleCommand = (cmd, args) => {
   switch (cmd) {
@@ -12,7 +13,7 @@ const handleCommand = (cmd, args) => {
       console.log("complete");
       break;
     case "list":
-      console.log("list");
+      listTasksCommand();
       break;
     default:
       console.log("❌ Unknown command");

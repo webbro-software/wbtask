@@ -22,3 +22,17 @@ export function saveTask(task) {
 
   fs.writeFileSync(TASKS_PATH, JSON.stringify(tasks, null, 2), "utf-8");
 }
+
+export function loadTasks() {
+  if (!fs.existsSync(TASKS_PATH)) return [];
+
+  const content = fs.readFileSync(TASKS_PATH, "utf-8").trim();
+  if (!content) return [];
+
+  try {
+    return JSON.parse(content);
+  } catch (err) {
+    console.error("❌ Invalid JSON in task file.");
+    return [];
+  }
+}
