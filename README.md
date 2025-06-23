@@ -1,4 +1,4 @@
-# 📄 WebBro Task Manager (CLI) — `wbtm`
+# 📄 WebBro Task Manager (CLI) - `wbtm`
 
 A minimal, beautiful command-line task manager built with Node.js.  
 Manage tasks directly from your terminal using simple commands.
