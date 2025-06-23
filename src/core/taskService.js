@@ -17,4 +17,12 @@ const removeTask = (id) => {
   writeFileSync(updated);
 };
 
-export { addTask, removeTask };
+const updateTask = (id, newText) => {
+  const tasks = loadTasks();
+  const updated = tasks.map((task) =>
+    task.id === id ? { ...task, text: newText } : task
+  );
+  writeFileSync(updated);
+};
+
+export { addTask, removeTask, updateTask };
