@@ -1,4 +1,5 @@
 import { addTaskCommand } from "./commands/addTask.js";
+import help from "./commands/help.js";
 import { listTasksCommand } from "./commands/listTasks.js";
 import { clear, removeTaskCommand } from "./commands/removeTask.js";
 
@@ -19,11 +20,11 @@ const handleCommand = (cmd, args) => {
     case "list":
       listTasksCommand();
       break;
-    case "--help":
-      console.log("Hello");
+    case "help":
+      help();
       break;
     default:
-      console.log("❌ Unknown command");
+      console.log("❌ Unknown command, try `wbtm help`");
   }
 };
 
