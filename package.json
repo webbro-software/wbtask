@@ -2,7 +2,7 @@
   "name": "@webbro-software/wbtask",
   "version": "1.0.0",
   "bin": {
-    "wbtask": "./src/bin/wbtask.js"
+    "wbtm": "./src/bin/wbtm.js"
   },
   "description": "",
   "main": "index.js",

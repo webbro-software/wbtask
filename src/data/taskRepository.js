@@ -1,7 +1,7 @@
 import fs from "fs";
 import { TASKS_PATH } from "../config/paths.js";
 
-export function saveTask(task) {
+const saveTask = (task) => {
   let tasks = [];
 
   if (fs.existsSync(TASKS_PATH)) {
@@ -21,9 +21,9 @@ export function saveTask(task) {
   tasks.push(task);
 
   fs.writeFileSync(TASKS_PATH, JSON.stringify(tasks, null, 2), "utf-8");
-}
+};
 
-export function loadTasks() {
+const loadTasks = () => {
   if (!fs.existsSync(TASKS_PATH)) return [];
 
   const content = fs.readFileSync(TASKS_PATH, "utf-8").trim();
@@ -35,4 +35,10 @@ export function loadTasks() {
     console.error("❌ Invalid JSON in task file.");
     return [];
   }
-}
+};
+
+const writeFileSync = (tasks) => {
+  fs.writeFileSync(TASKS_PATH, JSON.stringify(tasks, null, 2), "utf-8");
+};
+
+export { saveTask, loadTasks, writeFileSync };

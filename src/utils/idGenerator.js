@@ -1,5 +1,5 @@
 const generateId = () => {
-  return crypto.randomUUID();
+  return Date.now();
 };
 
 export { generateId };

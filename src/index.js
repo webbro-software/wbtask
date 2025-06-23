@@ -1,5 +1,6 @@
 import { addTaskCommand } from "./commands/addTask.js";
 import { listTasksCommand } from "./commands/listTasks.js";
+import { clear, removeTaskCommand } from "./commands/removeTask.js";
 
 const handleCommand = (cmd, args) => {
   switch (cmd) {
@@ -7,13 +8,19 @@ const handleCommand = (cmd, args) => {
       addTaskCommand(args.join(" "));
       break;
     case "remove":
-      console.log("remove");
+      removeTaskCommand(parseInt(args[0]));
+      break;
+    case "clear":
+      clear(parseInt(args[0]));
       break;
     case "complete":
       console.log("complete");
       break;
     case "list":
       listTasksCommand();
+      break;
+    case "--help":
+      console.log("Hello");
       break;
     default:
       console.log("❌ Unknown command");

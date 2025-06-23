@@ -11,6 +11,10 @@ export function listTasksCommand() {
   console.log();
 
   for (let i = 0; i < tasks.length; i++) {
-    console.log(`${i + 1}. [${tasks[i].done ? "✔" : " "}] ${tasks[i].text}`);
+    console.log(
+      `${i + 1}. [${tasks[i].done ? "✔" : " "}] ${tasks[i].text} (id: ${
+        tasks[i].id
+      })`
+    );
   }
 }
