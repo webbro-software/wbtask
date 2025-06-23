@@ -1,3 +1,4 @@
 # wbtm (Web Bro Task Manager) CLI Tool
 
-![image](https://github.com/user-attachments/assets/bc7d5f17-5412-48d7-919f-c27af50f56b4)
+![image](https://github.com/user-attachments/assets/f85e0134-c8d5-4e2b-bbe8-7dd44e4ff074)
+
