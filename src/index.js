@@ -1,7 +1,9 @@
+import { addTaskCommand } from "./commands/addTask.js";
+
 const handleCommand = (cmd, args) => {
   switch (cmd) {
     case "add":
-      console.log("add");
+      addTaskCommand(args.join(" "));
       break;
     case "remove":
       console.log("remove");

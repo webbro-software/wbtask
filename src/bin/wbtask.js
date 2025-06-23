@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import handleCommand from "..";
+import handleCommand from "../index.js";
 
 const [, , command, ...args] = process.argv;
 
