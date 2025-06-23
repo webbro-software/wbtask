@@ -1,4 +1,5 @@
 import { addTaskCommand } from "./commands/addTask.js";
+import { completeTaskCommand } from "./commands/completeTask.js";
 import help from "./commands/help.js";
 import { listTasksCommand } from "./commands/listTasks.js";
 import { clear, removeTaskCommand } from "./commands/removeTask.js";
@@ -16,7 +17,7 @@ const handleCommand = (cmd, args) => {
       clear(parseInt(args[0]));
       break;
     case "complete":
-      console.log("complete");
+      completeTaskCommand(parseInt(args[0]));
       break;
     case "update":
       updateTaskCommand(parseInt(args[0]), args.slice(1).join(" "));

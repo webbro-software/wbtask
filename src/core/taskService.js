@@ -25,4 +25,12 @@ const updateTask = (id, newText) => {
   writeFileSync(updated);
 };
 
-export { addTask, removeTask, updateTask };
+const completeTask = (id) => {
+  const tasks = loadTasks();
+  const updated = tasks.map((task) =>
+    task.id === id ? { ...task, done: !task.done } : task
+  );
+  writeFileSync(updated);
+};
+
+export { addTask, removeTask, updateTask, completeTask };
