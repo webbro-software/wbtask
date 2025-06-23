@@ -8,13 +8,16 @@ export function listTasksCommand() {
     return;
   }
 
+  console.log("\n📋 ALL TASK");
+
   console.log();
 
   for (let i = 0; i < tasks.length; i++) {
-    console.log(
-      `${i + 1}. [${tasks[i].done ? "✔" : " "}] ${tasks[i].text} (id: ${
-        tasks[i].id
-      })`
-    );
+    const status = tasks[i].done ? "✔️  Done" : "❌ Pending";
+    const space = " ".repeat(5);
+    console.log(`${i + 1}. ${tasks[i].text}`);
+    console.log(`${space}ID: ${tasks[i].id}`);
+    console.log(`${space}Status: ${status}`);
+    console.log();
   }
 }
