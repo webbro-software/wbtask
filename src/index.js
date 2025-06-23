@@ -4,6 +4,7 @@ import help from "./commands/help.js";
 import { listTasksCommand } from "./commands/listTasks.js";
 import { clear, removeTaskCommand } from "./commands/removeTask.js";
 import { updateTaskCommand } from "./commands/updateTask.js";
+import { getPackageJson, showVersion } from "./utils/package.js";
 
 const handleCommand = (cmd, args) => {
   switch (cmd) {
@@ -27,6 +28,9 @@ const handleCommand = (cmd, args) => {
       break;
     case "help":
       help();
+      break;
+    case "version":
+      showVersion();
       break;
     default:
       console.log("❌ Unknown command, try `wbtm help`");
