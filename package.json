@@ -1,6 +1,9 @@
 {
   "name": "@webbro-software/wbtask",
   "version": "1.0.0",
+  "bin": {
+    "wbtask": "./bin/wbtask.js"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
