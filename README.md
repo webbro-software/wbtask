@@ -1,1 +1,1 @@
-# wbtm (Web Bro Task Manager)
+# wbtm (Web Bro Task Manager) CLI
