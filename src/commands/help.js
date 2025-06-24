@@ -1,13 +1,15 @@
 import { showVersion } from "../utils/package.js";
-
+import { auraterm } from "@webbro-software/auraterm";
 const help = () => {
-  console.log(`
+  console.log(
+    auraterm("red")(`
 ██╗    ██╗██████╗ ████████╗███╗   ███╗
 ██║    ██║██╔══██╗╚══██╔══╝████╗ ████║
 ██║ █╗ ██║██████╔╝   ██║   ██╔████╔██║
 ██║███╗██║██╔══██╗   ██║   ██║╚██╔╝██║
 ╚███╔███╔╝██████╔╝   ██║   ██║ ╚═╝ ██║
- ╚══╝╚══╝ ╚═════╝    ╚═╝   ╚═╝     ╚═╝`);
+ ╚══╝╚══╝ ╚═════╝    ╚═╝   ╚═╝     ╚═╝`)
+  );
 
   showVersion();
 

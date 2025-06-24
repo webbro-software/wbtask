@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/webbro-software/wbtask/issues"
   },
-  "homepage": "https://github.com/webbro-software/wbtask#readme"
+  "homepage": "https://github.com/webbro-software/wbtask#readme",
+  "dependencies": {
+    "@webbro-software/auraterm": "^1.0.3"
+  }
 }
